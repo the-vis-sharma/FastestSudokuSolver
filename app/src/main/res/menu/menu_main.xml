@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.vb.fastestsudokusolver.MainActivity">
+    <item
+        android:id="@+id/resetbtn"
+        android:icon="@drawable/ic_menu_clear"
+        android:orderInCategory="100"
+        android:title="Reset"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/solvebtn"
+        android:icon="@drawable/ic_menu_done"
+        android:orderInCategory="100"
+        android:title="Solve"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_help"
+        android:orderInCategory="100"
+        android:title="@string/action_help"
+        app:showAsAction="never" />
+</menu>
