@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "D:\\AndroidProjects\\FastestSudokuSolver\\app\\build\\intermediates\\res\\merged\\release\\layout-v21\\notification_action_tombstone.xml",
+        "source": "C:\\Users\\bochi\\.android\\build-cache\\c3b558070e8d8f74f2808d05ff48a995c4b52410\\output\\res\\layout-v21\\notification_action_tombstone.xml"
+    },
+    {
+        "merged": "D:\\AndroidProjects\\FastestSudokuSolver\\app\\build\\intermediates\\res\\merged\\release\\layout-v21\\notification_action.xml",
+        "source": "C:\\Users\\bochi\\.android\\build-cache\\c3b558070e8d8f74f2808d05ff48a995c4b52410\\output\\res\\layout-v21\\notification_action.xml"
+    },
+    {
+        "merged": "D:\\AndroidProjects\\FastestSudokuSolver\\app\\build\\intermediates\\res\\merged\\release\\layout-v21\\notification_template_custom_big.xml",
+        "source": "C:\\Users\\bochi\\.android\\build-cache\\c3b558070e8d8f74f2808d05ff48a995c4b52410\\output\\res\\layout-v21\\notification_template_custom_big.xml"
+    },
+    {
+        "merged": "D:\\AndroidProjects\\FastestSudokuSolver\\app\\build\\intermediates\\res\\merged\\release\\layout-v21\\notification_template_icon_group.xml",
+        "source": "C:\\Users\\bochi\\.android\\build-cache\\c3b558070e8d8f74f2808d05ff48a995c4b52410\\output\\res\\layout-v21\\notification_template_icon_group.xml"
+    }
+]

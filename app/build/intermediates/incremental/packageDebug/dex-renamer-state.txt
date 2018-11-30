@@ -1,0 +1,7 @@
+#Mon Sep 24 10:10:08 IST 2018
+base.0=D\:\\AndroidProjects\\FastestSudokuSolver\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_ea2e58fa1a06b441cb35041ff862dac970a1f51f
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=D\:\\AndroidProjects\\FastestSudokuSolver\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_f53dda754717d59afe6aee1437edefb0047aacc8\\classes.dex
+base.1=D\:\\AndroidProjects\\FastestSudokuSolver\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_f53dda754717d59afe6aee1437edefb0047aacc8
+file.0=D\:\\AndroidProjects\\FastestSudokuSolver\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_ea2e58fa1a06b441cb35041ff862dac970a1f51f\\classes.dex
