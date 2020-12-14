@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Fastest Sudoku Solver Pro</string>
+    <string name="action_history">History</string>
+    <string name="action_about">About</string>
+    <string name="action_help">Help</string>
+    <string name="sol_btn_hlp">
+        This button is used to submit the inputed values and then generate the result after solving puzzle.
+    </string>
+    <string name="rst_btn_hlp">
+        This button is used for reset all the inputed values and empty all the cells.
+    </string>
+    <string name="about_action_hlp">
+        This menu option will show the details about the app and the developer.
+    </string>
+    <string name="help_action_hlp">
+        This menu option will show the basic help for using this app.
+    </string>
+</resources>

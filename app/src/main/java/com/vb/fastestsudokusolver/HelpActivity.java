@@ -19,13 +19,8 @@ public class HelpActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_help);
 
-        adViewTop = (AdView) findViewById(R.id.adViewHelpTop);
-        AdRequest adRT = new AdRequest.Builder().build();
-        adViewTop.loadAd(adRT);
-
-        adViewBottom = (AdView) findViewById(R.id.adViewHelpBottom);
-        AdRequest adRB = new AdRequest.Builder().build();
-        adViewBottom.loadAd(adRB);
+        AdInitializer initializer = new AdInitializer();
+        initializer.initHelp(this);
 
         /*// Facebook Instantiate an AdView view
         fbBannerAdTop = new com.facebook.ads.AdView(this, "199431437548527_199839130841091", AdSize.BANNER_HEIGHT_50);

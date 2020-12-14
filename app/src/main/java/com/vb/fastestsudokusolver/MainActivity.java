@@ -1,6 +1,7 @@
 package com.vb.fastestsudokusolver;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
@@ -20,8 +21,6 @@ import com.google.android.gms.ads.MobileAds;
 public class MainActivity extends AppCompatActivity {
     int i, j, pX = 0, pY = 0, x, y;
     private Button B[][], cBtn, pBtn, iB[], btnClr;
-    private AdView adViewTop;
-    private AdView adViewBottom;
     private InterstitialAd mInterstitialAd;
 
     /*private com.facebook.ads.AdView fbBannerAdTop;
@@ -35,80 +34,78 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        MobileAds.initialize(this, "ca-app-pub-8989913366273345~1437267312");
-        adViewTop = (AdView) findViewById(R.id.adViewHomeTop);
-        AdRequest adRT = new AdRequest.Builder().build();
-        adViewTop.loadAd(adRT);
+        if(BuildConfig.FLAVOR == "free") {
+            MobileAds.initialize(this, "ca-app-pub-8989913366273345~1437267312");
 
-        adViewBottom = (AdView) findViewById(R.id.adViewHomeButton);
-        AdRequest adRB = new AdRequest.Builder().build();
-        adViewBottom.loadAd(adRB);
+            AdInitializer initializer = new AdInitializer();
+            initializer.initHome(this);
 
-        mInterstitialAd = new InterstitialAd(this);
-        mInterstitialAd.setAdUnitId("ca-app-pub-8989913366273345/2089742119");
+            mInterstitialAd = new InterstitialAd(this);
+            mInterstitialAd.setAdUnitId("ca-app-pub-8989913366273345/2089742119");
 
-        mInterstitialAd.setAdListener(new AdListener() {
-            @Override
-            public void onAdClosed() {
-                requestNewInterstitial();
-            }
-        });
+            mInterstitialAd.setAdListener(new AdListener() {
+                @Override
+                public void onAdClosed() {
+                    requestNewInterstitial();
+                }
+            });
 
-        requestNewInterstitial();
+            requestNewInterstitial();
 
-        /*// Facebook Instantiate an AdView view
-        fbBannerAdTop = new com.facebook.ads.AdView(this, "199431437548527_199431677548503", AdSize.BANNER_HEIGHT_50);
-        // Find the Ad Container
-        LinearLayout adContainerTop = (LinearLayout) findViewById(R.id.home_banner_top);
-        // Add the ad view to your activity layout
-        adContainerTop.addView(fbBannerAdTop);
-        // Request an ad
-        fbBannerAdTop.loadAd();
+            /*// Facebook Instantiate an AdView view
+            fbBannerAdTop = new com.facebook.ads.AdView(this, "199431437548527_199431677548503", AdSize.BANNER_HEIGHT_50);
+            // Find the Ad Container
+            LinearLayout adContainerTop = (LinearLayout) findViewById(R.id.home_banner_top);
+            // Add the ad view to your activity layout
+            adContainerTop.addView(fbBannerAdTop);
+            // Request an ad
+            fbBannerAdTop.loadAd();
 
-        // Facebook Instantiate an AdView view
-        getFbBannerAdBottom = new com.facebook.ads.AdView(this, "199431437548527_199838550841149", AdSize.BANNER_HEIGHT_50);
-        // Find the Ad Container
-        LinearLayout adContainerBottom = (LinearLayout) findViewById(R.id.home_banner_bottom);
-        // Add the ad view to your activity layout
-        adContainerBottom.addView(getFbBannerAdBottom);
-        // Request an ad
-        getFbBannerAdBottom.loadAd();
+            // Facebook Instantiate an AdView view
+            getFbBannerAdBottom = new com.facebook.ads.AdView(this, "199431437548527_199838550841149", AdSize.BANNER_HEIGHT_50);
+            // Find the Ad Container
+            LinearLayout adContainerBottom = (LinearLayout) findViewById(R.id.home_banner_bottom);
+            // Add the ad view to your activity layout
+            adContainerBottom.addView(getFbBannerAdBottom);
+            // Request an ad
+            getFbBannerAdBottom.loadAd();
 
-        mInterstitialAd = new com.facebook.ads.InterstitialAd(this, "199431437548527_199838794174458");
+            mInterstitialAd = new com.facebook.ads.InterstitialAd(this, "199431437548527_199838794174458");
 
-        mInterstitialAd.setAdListener(new InterstitialAdListener() {
-            @Override
-            public void onInterstitialDisplayed(Ad ad) {
+            mInterstitialAd.setAdListener(new InterstitialAdListener() {
+                @Override
+                public void onInterstitialDisplayed(Ad ad) {
 
-            }
+                }
 
-            @Override
-            public void onInterstitialDismissed(Ad ad) {
-                mInterstitialAd.loadAd();
-            }
+                @Override
+                public void onInterstitialDismissed(Ad ad) {
+                    mInterstitialAd.loadAd();
+                }
 
-            @Override
-            public void onError(Ad ad, AdError adError) {
+                @Override
+                public void onError(Ad ad, AdError adError) {
 
-            }
+                }
 
-            @Override
-            public void onAdLoaded(Ad ad) {
+                @Override
+                public void onAdLoaded(Ad ad) {
 
-            }
+                }
 
-            @Override
-            public void onAdClicked(Ad ad) {
+                @Override
+                public void onAdClicked(Ad ad) {
 
-            }
+                }
 
-            @Override
-            public void onLoggingImpression(Ad ad) {
+                @Override
+                public void onLoggingImpression(Ad ad) {
 
-            }
-        });
+                }
+            });
 
-        mInterstitialAd.loadAd();*/
+            mInterstitialAd.loadAd();*/
+        }
 
         B = new Button[9][9];
 
@@ -159,8 +156,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void requestNewInterstitial() {
-        AdRequest adRequest = new AdRequest.Builder().build();
-        mInterstitialAd.loadAd(adRequest);
+        if(BuildConfig.FLAVOR == "free") {
+            AdRequest adRequest = new AdRequest.Builder().build();
+            mInterstitialAd.loadAd(adRequest);
+        }
     }
 
     private int getBackgroundId(int x, int y) {
@@ -201,6 +200,11 @@ public class MainActivity extends AppCompatActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_main, menu);
+        if(BuildConfig.FLAVOR.equals("paid")) {
+            invalidateOptionsMenu();
+            MenuItem item = menu.findItem(R.id.action_get_pro);
+            item.setVisible(false);
+        }
         return true;
     }
 
@@ -211,7 +215,7 @@ public class MainActivity extends AppCompatActivity {
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
-        if (mInterstitialAd.isLoaded()) {
+        if (BuildConfig.FLAVOR == "free" && mInterstitialAd.isLoaded()) {
             mInterstitialAd.show();
         }
 
@@ -230,6 +234,18 @@ public class MainActivity extends AppCompatActivity {
         } else if (id == R.id.action_help) {
             Intent i = new Intent(MainActivity.this, HelpActivity.class);
             startActivity(i);
+        } else if (id == R.id.action_more_apps) {
+            try {
+                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("market://developer?id=Techbuddy")));
+            } catch (android.content.ActivityNotFoundException anfe) {
+                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/developer?id=Techbuddy")));
+            }
+        } else if (id == R.id.action_get_pro) {
+            try {
+                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=com.vb.fastestsudokusolver.paid")));
+            } catch (android.content.ActivityNotFoundException anfe) {
+                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=com.vb.fastestsudokusolver.paid")));
+            }
         }
 
         return super.onOptionsItemSelected(item);

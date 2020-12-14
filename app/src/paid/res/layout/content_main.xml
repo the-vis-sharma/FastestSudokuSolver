@@ -1,0 +1,788 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="0dp"
+    android:paddingTop="0dp"
+    android:paddingRight="0dp"
+    android:paddingBottom="0dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.vb.fastestsudokusolver.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="0dp"
+        android:padding="0dp">
+
+
+
+        <TableRow android:layout_weight="0.083">
+
+            <Button
+                android:id="@+id/btn00"
+                android:layout_weight="0.11"
+                android:background="@drawable/btn_bg1"
+                android:padding="5dp"
+                android:textColor="#ffffff"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btn01"
+                android:layout_weight="0.11"
+                android:background="@drawable/btn_bg1"
+                android:padding="5dp"
+                android:textColor="#ffffff"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btn02"
+                android:layout_weight="0.11"
+                android:background="@drawable/btn_bg1"
+                android:padding="5dp"
+                android:textColor="#ffffff"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btn03"
+                android:layout_weight="0.11"
+                android:background="@drawable/btn_bg2"
+                android:padding="5dp"
+                android:textColor="#ffffff"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btn04"
+                android:layout_weight="0.11"
+                android:background="@drawable/btn_bg2"
+                android:padding="5dp"
+                android:textColor="#ffffff"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btn05"
+                android:layout_weight="0.11"
+                android:background="@drawable/btn_bg2"
+                android:padding="5dp"
+                android:textColor="#ffffff"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btn06"
+                android:layout_weight="0.11"
+                android:background="@drawable/btn_bg3"
+                android:padding="5dp"
+                android:textColor="#ffffff"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btn07"
+                android:layout_weight="0.11"
+                android:background="@drawable/btn_bg3"
+                android:padding="5dp"
+                android:textColor="#ffffff"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btn08"
+                android:layout_weight="0.11"
+                android:background="@drawable/btn_bg3"
+                android:padding="5dp"
+                android:textColor="#ffffff"
+                android:textSize="25sp" />
+
+        </TableRow>
+
+        <TableRow android:layout_weight="0.083">
+
+            <Button
+                android:id="@+id/btn10"
+                android:layout_weight="0.11"
+                android:background="@drawable/btn_bg1"
+                android:padding="5dp"
+                android:textColor="#ffffff"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btn11"
+                android:layout_weight="0.11"
+                android:background="@drawable/btn_bg1"
+                android:padding="5dp"
+                android:textColor="#ffffff"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btn12"
+                android:layout_weight="0.11"
+                android:background="@drawable/btn_bg1"
+                android:padding="5dp"
+                android:textColor="#ffffff"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btn13"
+                android:layout_weight="0.11"
+                android:background="@drawable/btn_bg2"
+                android:padding="5dp"
+                android:textColor="#ffffff"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btn14"
+                android:layout_weight="0.11"
+                android:background="@drawable/btn_bg2"
+                android:padding="5dp"
+                android:textColor="#ffffff"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btn15"
+                android:layout_weight="0.11"
+                android:background="@drawable/btn_bg2"
+                android:padding="5dp"
+                android:textColor="#ffffff"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btn16"
+                android:layout_weight="0.11"
+                android:background="@drawable/btn_bg3"
+                android:padding="5dp"
+                android:textColor="#ffffff"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btn17"
+                android:layout_weight="0.11"
+                android:background="@drawable/btn_bg3"
+                android:padding="5dp"
+                android:textColor="#ffffff"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btn18"
+                android:layout_weight="0.11"
+                android:background="@drawable/btn_bg3"
+                android:padding="5dp"
+                android:textColor="#ffffff"
+                android:textSize="25sp" />
+
+        </TableRow>
+
+        <TableRow android:layout_weight="0.083">
+
+            <Button
+                android:id="@+id/btn20"
+                android:layout_weight="0.11"
+                android:background="@drawable/btn_bg1"
+                android:padding="5dp"
+                android:textColor="#ffffff"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btn21"
+                android:layout_weight="0.11"
+                android:background="@drawable/btn_bg1"
+                android:padding="5dp"
+                android:textColor="#ffffff"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btn22"
+                android:layout_weight="0.11"
+                android:background="@drawable/btn_bg1"
+                android:padding="5dp"
+                android:textColor="#ffffff"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btn23"
+                android:layout_weight="0.11"
+                android:background="@drawable/btn_bg2"
+                android:padding="5dp"
+                android:textColor="#ffffff"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btn24"
+                android:layout_weight="0.11"
+                android:background="@drawable/btn_bg2"
+                android:padding="5dp"
+                android:textColor="#ffffff"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btn25"
+                android:layout_weight="0.11"
+                android:background="@drawable/btn_bg2"
+                android:padding="5dp"
+                android:textColor="#ffffff"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btn26"
+                android:layout_weight="0.11"
+                android:background="@drawable/btn_bg3"
+                android:padding="5dp"
+                android:textColor="#ffffff"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btn27"
+                android:layout_weight="0.11"
+                android:background="@drawable/btn_bg3"
+                android:padding="5dp"
+                android:textColor="#ffffff"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btn28"
+                android:layout_weight="0.11"
+                android:background="@drawable/btn_bg3"
+                android:padding="5dp"
+                android:textColor="#ffffff"
+                android:textSize="25sp" />
+
+        </TableRow>
+
+        <TableRow android:layout_weight="0.083">
+
+            <Button
+                android:id="@+id/btn30"
+                android:layout_weight="0.11"
+                android:background="@drawable/btn_bg4"
+                android:padding="5dp"
+                android:textColor="#ffffff"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btn31"
+                android:layout_weight="0.11"
+                android:background="@drawable/btn_bg4"
+                android:padding="5dp"
+                android:textColor="#ffffff"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btn32"
+                android:layout_weight="0.11"
+                android:background="@drawable/btn_bg4"
+                android:padding="5dp"
+                android:textColor="#ffffff"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btn33"
+                android:layout_weight="0.11"
+                android:background="@drawable/btn_bg5"
+                android:padding="5dp"
+                android:textColor="#ffffff"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btn34"
+                android:layout_weight="0.11"
+                android:background="@drawable/btn_bg5"
+                android:padding="5dp"
+                android:textColor="#ffffff"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btn35"
+                android:layout_weight="0.11"
+                android:background="@drawable/btn_bg5"
+                android:padding="5dp"
+                android:textColor="#ffffff"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btn36"
+                android:layout_weight="0.11"
+                android:background="@drawable/btn_bg6"
+                android:padding="5dp"
+                android:textColor="#ffffff"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btn37"
+                android:layout_weight="0.11"
+                android:background="@drawable/btn_bg6"
+                android:padding="5dp"
+                android:textColor="#ffffff"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btn38"
+                android:layout_weight="0.11"
+                android:background="@drawable/btn_bg6"
+                android:padding="5dp"
+                android:textColor="#ffffff"
+                android:textSize="25sp" />
+
+        </TableRow>
+
+        <TableRow android:layout_weight="0.083">
+
+            <Button
+                android:id="@+id/btn40"
+                android:layout_weight="0.11"
+                android:background="@drawable/btn_bg4"
+                android:padding="5dp"
+                android:textColor="#ffffff"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btn41"
+                android:layout_weight="0.11"
+                android:background="@drawable/btn_bg4"
+                android:padding="5dp"
+                android:textColor="#ffffff"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btn42"
+                android:layout_weight="0.11"
+                android:background="@drawable/btn_bg4"
+                android:padding="5dp"
+                android:textColor="#ffffff"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btn43"
+                android:layout_weight="0.11"
+                android:background="@drawable/btn_bg5"
+                android:padding="5dp"
+                android:textColor="#ffffff"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btn44"
+                android:layout_weight="0.11"
+                android:background="@drawable/btn_bg5"
+                android:padding="5dp"
+                android:textColor="#ffffff"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btn45"
+                android:layout_weight="0.11"
+                android:background="@drawable/btn_bg5"
+                android:padding="5dp"
+                android:textColor="#ffffff"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btn46"
+                android:layout_weight="0.11"
+                android:background="@drawable/btn_bg6"
+                android:padding="5dp"
+                android:textColor="#ffffff"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btn47"
+                android:layout_weight="0.11"
+                android:background="@drawable/btn_bg6"
+                android:padding="5dp"
+                android:textColor="#ffffff"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btn48"
+                android:layout_weight="0.11"
+                android:background="@drawable/btn_bg6"
+                android:padding="5dp"
+                android:textColor="#ffffff"
+                android:textSize="25sp" />
+
+        </TableRow>
+
+        <TableRow android:layout_weight="0.083">
+
+            <Button
+                android:id="@+id/btn50"
+                android:layout_weight="0.11"
+                android:background="@drawable/btn_bg4"
+                android:padding="5dp"
+                android:textColor="#ffffff"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btn51"
+                android:layout_weight="0.11"
+                android:background="@drawable/btn_bg4"
+                android:padding="5dp"
+                android:textColor="#ffffff"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btn52"
+                android:layout_weight="0.11"
+                android:background="@drawable/btn_bg4"
+                android:padding="5dp"
+                android:textColor="#ffffff"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btn53"
+                android:layout_weight="0.11"
+                android:background="@drawable/btn_bg5"
+                android:padding="5dp"
+                android:textColor="#ffffff"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btn54"
+                android:layout_weight="0.11"
+                android:background="@drawable/btn_bg5"
+                android:padding="5dp"
+                android:textColor="#ffffff"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btn55"
+                android:layout_weight="0.11"
+                android:background="@drawable/btn_bg5"
+                android:padding="5dp"
+                android:textColor="#ffffff"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btn56"
+                android:layout_weight="0.11"
+                android:background="@drawable/btn_bg6"
+                android:padding="5dp"
+                android:textColor="#ffffff"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btn57"
+                android:layout_weight="0.11"
+                android:background="@drawable/btn_bg6"
+                android:padding="5dp"
+                android:textColor="#ffffff"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btn58"
+                android:layout_weight="0.11"
+                android:background="@drawable/btn_bg6"
+                android:padding="5dp"
+                android:textColor="#ffffff"
+                android:textSize="25sp" />
+
+        </TableRow>
+
+        <TableRow android:layout_weight="0.083">
+
+            <Button
+                android:id="@+id/btn60"
+                android:layout_weight="0.11"
+                android:background="@drawable/btn_bg7"
+                android:padding="5dp"
+                android:textColor="#ffffff"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btn61"
+                android:layout_weight="0.11"
+                android:background="@drawable/btn_bg7"
+                android:padding="5dp"
+                android:textColor="#ffffff"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btn62"
+                android:layout_weight="0.11"
+                android:background="@drawable/btn_bg7"
+                android:padding="5dp"
+                android:textColor="#ffffff"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btn63"
+                android:layout_weight="0.11"
+                android:background="@drawable/btn_bg8"
+                android:padding="5dp"
+                android:textColor="#ffffff"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btn64"
+                android:layout_weight="0.11"
+                android:background="@drawable/btn_bg8"
+                android:padding="5dp"
+                android:textColor="#ffffff"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btn65"
+                android:layout_weight="0.11"
+                android:background="@drawable/btn_bg8"
+                android:padding="5dp"
+                android:textColor="#ffffff"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btn66"
+                android:layout_weight="0.11"
+                android:background="@drawable/btn_bg9"
+                android:padding="5dp"
+                android:textColor="#ffffff"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btn67"
+                android:layout_weight="0.11"
+                android:background="@drawable/btn_bg9"
+                android:padding="5dp"
+                android:textColor="#ffffff"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btn68"
+                android:layout_weight="0.11"
+                android:background="@drawable/btn_bg9"
+                android:padding="5dp"
+                android:textColor="#ffffff"
+                android:textSize="25sp" />
+
+        </TableRow>
+
+        <TableRow android:layout_weight="0.083">
+
+            <Button
+                android:id="@+id/btn70"
+                android:layout_weight="0.11"
+                android:background="@drawable/btn_bg7"
+                android:padding="5dp"
+                android:textColor="#ffffff"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btn71"
+                android:layout_weight="0.11"
+                android:background="@drawable/btn_bg7"
+                android:padding="5dp"
+                android:textColor="#ffffff"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btn72"
+                android:layout_weight="0.11"
+                android:background="@drawable/btn_bg7"
+                android:padding="5dp"
+                android:textColor="#ffffff"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btn73"
+                android:layout_weight="0.11"
+                android:background="@drawable/btn_bg8"
+                android:padding="5dp"
+                android:textColor="#ffffff"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btn74"
+                android:layout_weight="0.11"
+                android:background="@drawable/btn_bg8"
+                android:padding="5dp"
+                android:textColor="#ffffff"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btn75"
+                android:layout_weight="0.11"
+                android:background="@drawable/btn_bg8"
+                android:padding="5dp"
+                android:textColor="#ffffff"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btn76"
+                android:layout_weight="0.11"
+                android:background="@drawable/btn_bg9"
+                android:padding="5dp"
+                android:textColor="#ffffff"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btn77"
+                android:layout_weight="0.11"
+                android:background="@drawable/btn_bg9"
+                android:padding="5dp"
+                android:textColor="#ffffff"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btn78"
+                android:layout_weight="0.11"
+                android:background="@drawable/btn_bg9"
+                android:padding="5dp"
+                android:textColor="#ffffff"
+                android:textSize="25sp" />
+
+        </TableRow>
+
+        <TableRow android:layout_weight="0.083">
+
+            <Button
+                android:id="@+id/btn80"
+                android:layout_weight="0.11"
+                android:background="@drawable/btn_bg7"
+                android:padding="5dp"
+                android:textColor="#ffffff"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btn81"
+                android:layout_weight="0.11"
+                android:background="@drawable/btn_bg7"
+                android:padding="5dp"
+                android:textColor="#ffffff"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btn82"
+                android:layout_weight="0.11"
+                android:background="@drawable/btn_bg7"
+                android:padding="5dp"
+                android:textColor="#ffffff"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btn83"
+                android:layout_weight="0.11"
+                android:background="@drawable/btn_bg8"
+                android:padding="5dp"
+                android:textColor="#ffffff"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btn84"
+                android:layout_weight="0.11"
+                android:background="@drawable/btn_bg8"
+                android:padding="5dp"
+                android:textColor="#ffffff"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btn85"
+                android:layout_weight="0.11"
+                android:background="@drawable/btn_bg8"
+                android:padding="5dp"
+                android:textColor="#ffffff"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btn86"
+                android:layout_weight="0.11"
+                android:background="@drawable/btn_bg9"
+                android:padding="5dp"
+                android:textColor="#ffffff"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btn87"
+                android:layout_weight="0.11"
+                android:background="@drawable/btn_bg9"
+                android:padding="5dp"
+                android:textColor="#ffffff"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btn88"
+                android:layout_weight="0.11"
+                android:background="@drawable/btn_bg9"
+                android:padding="5dp"
+                android:textColor="#ffffff"
+                android:textSize="25sp" />
+
+        </TableRow>
+
+        <TableRow android:layout_weight="0.124">
+
+            <Button
+                android:id="@+id/btn1"
+                android:layout_weight="0.2"
+                android:padding="5dp"
+                android:text="1"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btn2"
+                android:layout_weight="0.2"
+                android:padding="5dp"
+                android:text="2"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btn3"
+                android:layout_weight="0.2"
+                android:padding="5dp"
+                android:text="3"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btn4"
+                android:layout_weight="0.2"
+                android:padding="5dp"
+                android:text="4"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btn5"
+                android:layout_weight="0.2"
+                android:padding="5dp"
+                android:text="5"
+                android:textSize="25sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_weight="0.124"
+            android:paddingBottom="5dp">
+
+            <Button
+                android:id="@+id/btn6"
+                android:layout_weight="0.2"
+                android:padding="5dp"
+                android:text="6"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btn7"
+                android:layout_weight="0.2"
+                android:padding="5dp"
+                android:text="7"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btn8"
+                android:layout_weight="0.2"
+                android:padding="5dp"
+                android:text="8"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btn9"
+                android:layout_weight="0.2"
+                android:padding="5dp"
+                android:text="9"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btnClr"
+                android:layout_weight="0.2"
+                android:padding="5dp"
+                android:text="Clr"
+                android:textSize="25sp" />
+        </TableRow>
+    </TableLayout>
+
+</RelativeLayout>

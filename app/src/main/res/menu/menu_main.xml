@@ -16,8 +16,21 @@
         app:showAsAction="always" />
 
     <item
+        android:id="@+id/action_get_pro"
+        android:orderInCategory="100"
+        android:title="Get Pro"
+        app:showAsAction="never" />
+
+    <item
         android:id="@+id/action_help"
         android:orderInCategory="100"
         android:title="@string/action_help"
         app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_more_apps"
+        android:orderInCategory="100"
+        android:title="More Apps"
+        app:showAsAction="never" />
+
 </menu>
